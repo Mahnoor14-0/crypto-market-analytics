@@ -1,0 +1,9 @@
+{
+  "load_type": "FULL",
+  "run_timestamp": "2026-10-05T19:32:51.365699+00:00",
+  "requested_coins": 250,
+  "historical_days": 90,
+  "interval": "hourly",
+  "successful_downloads": 250,
+  "failed_downloads": []
+}
