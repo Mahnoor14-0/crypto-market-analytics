@@ -1,0 +1,13 @@
+{
+  "batch_id": "incremental_2026-10-07",
+  "run_date": "2026-10-07",
+  "load_type": "INCREMENTAL",
+  "source": "CoinGecko",
+  "endpoint": "/coins/{id}/market_chart",
+  "requested_coins": 250,
+  "successful_downloads": 250,
+  "failed_downloads": 0,
+  "failed_coins": [],
+  "days_requested": 2,
+  "download_timestamp": "2026-10-07T17:34:57.543711+00:00"
+}
