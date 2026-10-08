@@ -9,9 +9,9 @@ import requests
 from dotenv import load_dotenv
 
 
-# ============================================================
-# 1. PROJECT PATHS AND ENVIRONMENT
-# ============================================================
+# --------------------------------------------------
+# PROJECT SETUP
+# --------------------------------------------------
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 
@@ -20,15 +20,8 @@ load_dotenv(PROJECT_ROOT / ".env")
 API_KEY = os.getenv("COINGECKO_API_KEY")
 
 if not API_KEY:
-    raise ValueError(
-        "COINGECKO_API_KEY not found. "
-        "Check your .env file."
-    )
+    raise ValueError("CoinGecko API key not found. Check your .env file.")
 
-
-# ============================================================
-# 2. CONFIGURATION
-# ============================================================
 
 BASE_URL = "https://api.coingecko.com/api/v3"
 
@@ -47,52 +40,63 @@ OUTPUT_ROOT = (
     / "incremental_load_250"
 )
 
-DAYS = 2
 
-HEADERS = {
-    "x-cg-demo-api-key": API_KEY
-}
-
-
-# ============================================================
-# 3. COMMAND-LINE PARAMETERS
-# ============================================================
+# --------------------------------------------------
+# PARAMETERS
+# --------------------------------------------------
 
 parser = argparse.ArgumentParser(
-    description="Download CoinGecko incremental hourly data."
+    description="Download parameterized incremental cryptocurrency data"
 )
 
 parser.add_argument(
     "--run-date",
     type=str,
-    default=None,
-    help="Processing date in YYYY-MM-DD format."
+    required=True,
+    help="Data date in YYYY-MM-DD format"
 )
 
 args = parser.parse_args()
 
-
-# ============================================================
-# 4. DETERMINE RUN DATE
-# ============================================================
-
-if args.run_date:
-    try:
-        run_date = datetime.strptime(
-            args.run_date,
-            "%Y-%m-%d"
-        ).date()
-    except ValueError:
-        raise ValueError(
-            "run-date must be in YYYY-MM-DD format."
-        )
-else:
-    run_date = datetime.now(timezone.utc).date()
+try:
+    run_date = datetime.strptime(
+        args.run_date,
+        "%Y-%m-%d"
+    ).date()
+except ValueError:
+    raise ValueError("run-date must be in YYYY-MM-DD format")
 
 
-# ============================================================
-# 5. BATCH INFORMATION
-# ============================================================
+# --------------------------------------------------
+# EXACT DATE RANGE
+# --------------------------------------------------
+
+# Include one previous day for overlap.
+start_date = run_date - timedelta(days=1)
+
+# End is exclusive.
+end_date = run_date + timedelta(days=1)
+
+
+start_datetime = datetime.combine(
+    start_date,
+    datetime.min.time(),
+    tzinfo=timezone.utc
+)
+
+end_datetime = datetime.combine(
+    end_date,
+    datetime.min.time(),
+    tzinfo=timezone.utc
+)
+
+from_timestamp = int(start_datetime.timestamp())
+to_timestamp = int(end_datetime.timestamp())
+
+
+# --------------------------------------------------
+# OUTPUT DIRECTORY
+# --------------------------------------------------
 
 batch_id = f"incremental_{run_date}"
 
@@ -103,30 +107,17 @@ output_dir.mkdir(
     exist_ok=True
 )
 
-print("=" * 60)
-print("COINGECKO INCREMENTAL LOAD")
-print("=" * 60)
 
-print(f"Run date: {run_date}")
-print(f"Batch ID: {batch_id}")
-print(f"Historical window: {DAYS} days")
-print(f"Output directory: {output_dir}")
-
-
-# ============================================================
-# 6. READ THE SAME 250-COIN MANIFEST USED BY FULL LOAD
-# ============================================================
+# --------------------------------------------------
+# LOAD COIN MANIFEST
+# --------------------------------------------------
 
 if not MANIFEST_FILE.exists():
     raise FileNotFoundError(
-        f"Coin manifest not found:\n{MANIFEST_FILE}"
+        f"Coin manifest not found: {MANIFEST_FILE}"
     )
 
-with open(
-    MANIFEST_FILE,
-    "r",
-    encoding="utf-8"
-) as file:
+with open(MANIFEST_FILE, "r", encoding="utf-8") as file:
     manifest = json.load(file)
 
 
@@ -136,217 +127,157 @@ COINS = [
     if "id" in coin
 ]
 
-print(f"Coins found in manifest: {len(COINS)}")
+print(f"Coins to download: {len(COINS)}")
+print(f"Batch ID: {batch_id}")
+print(f"Data range: {start_datetime} → {end_datetime}")
+print(f"Output directory: {output_dir}")
 
-if len(COINS) == 0:
-    raise ValueError(
-        "No coin IDs found in coin_manifest.json."
+
+# --------------------------------------------------
+# API SETUP
+# --------------------------------------------------
+
+headers = {
+    "x-cg-demo-api-key": API_KEY
+}
+
+
+# --------------------------------------------------
+# DOWNLOAD
+# --------------------------------------------------
+
+download_report = []
+
+run_started = datetime.now(timezone.utc).isoformat()
+
+for index, coin_id in enumerate(COINS, start=1):
+
+    print(
+        f"[{index}/{len(COINS)}] Downloading {coin_id}..."
     )
 
-
-# ============================================================
-# 7. CREATE REQUEST SESSION
-# ============================================================
-
-session = requests.Session()
-
-session.headers.update(HEADERS)
-
-
-# ============================================================
-# 8. FUNCTION TO DOWNLOAD ONE COIN
-# ============================================================
-
-def download_coin(coin_id):
-
-    url = f"{BASE_URL}/coins/{coin_id}/market_chart"
+    url = (
+        f"{BASE_URL}/coins/"
+        f"{coin_id}/market_chart/range"
+    )
 
     params = {
         "vs_currency": "usd",
-        "days": DAYS
+        "from": from_timestamp,
+        "to": to_timestamp
     }
 
-    max_attempts = 4
+    success = False
 
-    for attempt in range(1, max_attempts + 1):
+    for attempt in range(1, 4):
 
         try:
 
-            response = session.get(
+            response = requests.get(
                 url,
+                headers=headers,
                 params=params,
                 timeout=60
             )
 
-            # Successful request
             if response.status_code == 200:
-                return response.json()
 
-            # Rate limit
-            if response.status_code == 429:
+                data = response.json()
 
-                wait_time = 10 * attempt
-
-                print(
-                    f"Rate limited for {coin_id}. "
-                    f"Waiting {wait_time} seconds..."
+                output_file = (
+                    output_dir
+                    / f"{coin_id}.json"
                 )
 
-                time.sleep(wait_time)
+                with open(
+                    output_file,
+                    "w",
+                    encoding="utf-8"
+                ) as file:
 
-                continue
+                    json.dump(
+                        data,
+                        file,
+                        indent=2
+                    )
 
-            # Temporary server error
-            if response.status_code >= 500:
+                download_report.append({
+                    "coin_id": coin_id,
+                    "status": "success",
+                    "file": str(output_file),
+                    "start_date": str(start_date),
+                    "end_date": str(end_date)
+                })
 
-                wait_time = 5 * attempt
+                success = True
+                break
 
-                print(
-                    f"Server error for {coin_id}. "
-                    f"Retrying in {wait_time} seconds..."
-                )
-
-                time.sleep(wait_time)
-
-                continue
-
-            # Other HTTP error
-            print(
-                f"HTTP {response.status_code} "
-                f"for {coin_id}:"
-            )
-
-            print(response.text)
-
-            return None
-
-        except requests.RequestException as error:
-
-            wait_time = 5 * attempt
-
-            print(
-                f"Request error for {coin_id}: {error}"
-            )
-
-            if attempt < max_attempts:
+            elif response.status_code == 429:
 
                 print(
-                    f"Retrying in {wait_time} seconds..."
+                    f"Rate limited. Attempt {attempt}/3"
                 )
 
-                time.sleep(wait_time)
+                time.sleep(10)
+
+            elif response.status_code >= 500:
+
+                print(
+                    f"Server error {response.status_code}. "
+                    f"Attempt {attempt}/3"
+                )
+
+                time.sleep(5)
 
             else:
 
-                return None
+                print(
+                    f"Failed: {response.status_code}"
+                )
 
-    return None
+                print(response.text)
 
+                break
 
-# ============================================================
-# 9. DOWNLOAD ALL 250 COINS
-# ============================================================
+        except requests.RequestException as error:
 
-successful = 0
+            print(
+                f"Request error: {error}. "
+                f"Attempt {attempt}/3"
+            )
 
-failed = []
+            time.sleep(5)
 
+    if not success:
 
-for index, coin_id in enumerate(
-    COINS,
-    start=1
-):
+        download_report.append({
+            "coin_id": coin_id,
+            "status": "failed"
+        })
 
-    print(
-        f"\n[{index}/{len(COINS)}] "
-        f"Downloading {coin_id}..."
-    )
-
-    data = download_coin(coin_id)
-
-    if data is None:
-
-        failed.append(coin_id)
-
-        print(
-            f"FAILED: {coin_id}"
-        )
-
-        continue
-
-
-    # --------------------------------------------------------
-    # Save raw response
-    # --------------------------------------------------------
-
-    output_file = (
-        output_dir
-        / f"{coin_id}.json"
-    )
-
-    with open(
-        output_file,
-        "w",
-        encoding="utf-8"
-    ) as file:
-
-        json.dump(
-            data,
-            file,
-            indent=2
-        )
-
-
-    successful += 1
-
-    print(
-        f"Saved: {output_file}"
-    )
-
-
-    # --------------------------------------------------------
-    # Delay between API requests
-    # --------------------------------------------------------
-
+    # Avoid aggressive API requests.
     time.sleep(2.5)
 
 
-# ============================================================
-# 10. DOWNLOAD REPORT
-# ============================================================
+# --------------------------------------------------
+# SAVE REPORT
+# --------------------------------------------------
 
 report = {
-
+    "run_id": f"{batch_id}_{datetime.now(timezone.utc).strftime('%H%M%S')}",
     "batch_id": batch_id,
-
     "run_date": str(run_date),
-
-    "load_type": "INCREMENTAL",
-
-    "source": "CoinGecko",
-
-    "endpoint": "/coins/{id}/market_chart",
-
-    "requested_coins": len(COINS),
-
-    "successful_downloads": successful,
-
-    "failed_downloads": len(failed),
-
-    "failed_coins": failed,
-
-    "days_requested": DAYS,
-
-    "download_timestamp": datetime.now(
-        timezone.utc
-    ).isoformat()
+    "start_date": str(start_date),
+    "end_date": str(end_date),
+    "from_timestamp": from_timestamp,
+    "to_timestamp": to_timestamp,
+    "number_of_coins": len(COINS),
+    "run_started": run_started,
+    "run_completed": datetime.now(timezone.utc).isoformat(),
+    "files": download_report
 }
 
-
-report_file = (
-    output_dir
-    / "download_report.json"
-)
+report_file = output_dir / "download_report.json"
 
 with open(
     report_file,
@@ -361,34 +292,6 @@ with open(
     )
 
 
-# ============================================================
-# 11. FINAL SUMMARY
-# ============================================================
-
-print("\n" + "=" * 60)
-
-print("INCREMENTAL LOAD FINISHED")
-
-print("=" * 60)
-
-print(
-    f"Requested coins: {len(COINS)}"
-)
-
-print(
-    f"Successful downloads: {successful}"
-)
-
-print(
-    f"Failed downloads: {len(failed)}"
-)
-
-print(
-    f"Batch ID: {batch_id}"
-)
-
-print(
-    f"Output directory: {output_dir}"
-)
-
-print("=" * 60)
+print("\nIncremental load completed.")
+print(f"Batch: {batch_id}")
+print(f"Report: {report_file}")

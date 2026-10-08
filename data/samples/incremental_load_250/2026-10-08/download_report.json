@@ -1,0 +1,1764 @@
+{
+  "run_id": "incremental_2026-10-08_184429",
+  "batch_id": "incremental_2026-10-08",
+  "run_date": "2026-10-08",
+  "start_date": "2026-10-07",
+  "end_date": "2026-10-09",
+  "from_timestamp": 1791331200,
+  "to_timestamp": 1791504000,
+  "number_of_coins": 250,
+  "run_started": "2026-10-08T18:29:44.209604+00:00",
+  "run_completed": "2026-10-08T18:44:29.348116+00:00",
+  "files": [
+    {
+      "coin_id": "bitcoin",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\bitcoin.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "ethereum",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\ethereum.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "tether",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\tether.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "binancecoin",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\binancecoin.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "ripple",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\ripple.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "usd-coin",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\usd-coin.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "solana",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\solana.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "tron",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\tron.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "figure-heloc",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\figure-heloc.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "zcash",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\zcash.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "hyperliquid",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\hyperliquid.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "dogecoin",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\dogecoin.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "monero",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\monero.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "chainlink",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\chainlink.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "whitebit",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\whitebit.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "usds",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\usds.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "cardano",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\cardano.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "leo-token",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\leo-token.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "rain",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\rain.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "stellar",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\stellar.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "near",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\near.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "bitcoin-cash",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\bitcoin-cash.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "uniswap",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\uniswap.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "litecoin",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\litecoin.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "canton-network",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\canton-network.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "ethena-usde",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\ethena-usde.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "sui",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\sui.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "avalanche-2",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\avalanche-2.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "dai",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\dai.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "hedera-hashgraph",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\hedera-hashgraph.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "usd1-wlfi",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\usd1-wlfi.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "the-open-network",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\the-open-network.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "quant-network",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\quant-network.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "bitway",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\bitway.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "shiba-inu",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\shiba-inu.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "bittensor",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\bittensor.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "crypto-com-chain",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\crypto-com-chain.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "tether-gold",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\tether-gold.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "ethena",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\ethena.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "global-dollar",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\global-dollar.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "paypal-usd",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\paypal-usd.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "pump-fun",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\pump-fun.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "aave",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\aave.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "okb",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\okb.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "ripple-usd",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\ripple-usd.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "hashnote-usyc",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\hashnote-usyc.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "ondo-finance",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\ondo-finance.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "memecore",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\memecore.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "ondo-us-dollar-yield",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\ondo-us-dollar-yield.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "blackrock-usd-institutional-digital-liquidity-fund",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\blackrock-usd-institutional-digital-liquidity-fund.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "mantle",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\mantle.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "worldcoin-wld",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\worldcoin-wld.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "polkadot",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\polkadot.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "sky",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\sky.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "aster-2",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\aster-2.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "internet-computer",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\internet-computer.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "morpho",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\morpho.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "pepe",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\pepe.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "falcon-finance",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\falcon-finance.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "pax-gold",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\pax-gold.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "world-liberty-financial",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\world-liberty-financial.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "usdd",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\usdd.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "htx-dao",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\htx-dao.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "spiko-amundi-overnight-swap-fund-eur",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\spiko-amundi-overnight-swap-fund-eur.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "united-stables",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\united-stables.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "ethereum-classic",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\ethereum-classic.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "arbitrum",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\arbitrum.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "bitget-token",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\bitget-token.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "venice-token",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\venice-token.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "bfusd",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\bfusd.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "usdgo",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\usdgo.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "kaspa",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\kaspa.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "gatechain-token",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\gatechain-token.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "jupiter-exchange-solana",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\jupiter-exchange-solana.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "polygon-ecosystem-token",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\polygon-ecosystem-token.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "algorand",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\algorand.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "just",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\just.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "kucoin-shares",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\kucoin-shares.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "render-token",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\render-token.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "lighter",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\lighter.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "blockchain-capital",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\blockchain-capital.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "pi-network",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\pi-network.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "cosmos",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\cosmos.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "filecoin",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\filecoin.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "aerodrome-finance",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\aerodrome-finance.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "nexo",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\nexo.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "layerzero",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\layerzero.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "midnight-3",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\midnight-3.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "pancakeswap-token",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\pancakeswap-token.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "injective-protocol",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\injective-protocol.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "superstate-short-duration-us-government-securities-fund-ustb",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\superstate-short-duration-us-government-securities-fund-ustb.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "dash",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\dash.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "vechain",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\vechain.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "stable-2",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\stable-2.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "ether-fi",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\ether-fi.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "aptos",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\aptos.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "blockstack",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\blockstack.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "akedo",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\akedo.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "open-usd",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\open-usd.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "gho",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\gho.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "eutbl",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\eutbl.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "xdce-crowd-sale",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\xdce-crowd-sale.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "flare-networks",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\flare-networks.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "pudgy-penguins",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\pudgy-penguins.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "pyth-network",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\pyth-network.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "curve-dao-token",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\curve-dao-token.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "fetch-ai",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\fetch-ai.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "janus-henderson-anemoy-aaa-clo-fund",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\janus-henderson-anemoy-aaa-clo-fund.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "raydium",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\raydium.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "official-trump",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\official-trump.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "beldex",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\beldex.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "virtual-protocol",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\virtual-protocol.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "usual-usd",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\usual-usd.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "kinesis-gold",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\kinesis-gold.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "grass",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\grass.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "ylds",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\ylds.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "bianrensheng",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\bianrensheng.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "true-usd",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\true-usd.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "usdtb",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\usdtb.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "sei-network",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\sei-network.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "euro-coin",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\euro-coin.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "a7a5",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\a7a5.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "celestia",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\celestia.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "pendle",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\pendle.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "plasma",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\plasma.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "spx6900",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\spx6900.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "bitcoin-cash-sv",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\bitcoin-cash-sv.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "derive",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\derive.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "pearl-2",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\pearl-2.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "starknet",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\starknet.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "falcon-finance-ff",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\falcon-finance-ff.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "lido-dao",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\lido-dao.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "monad",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\monad.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "bittorrent",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\bittorrent.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "pieverse",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\pieverse.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "tezos",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\tezos.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "unibase",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\unibase.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "hash-2",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\hash-2.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "bonk",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\bonk.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "usdai",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\usdai.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "kite-2",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\kite-2.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "sofiusd",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\sofiusd.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "sun-token",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\sun-token.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "decred",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\decred.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "janus-henderson-anemoy-treasury-fund",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\janus-henderson-anemoy-treasury-fund.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "first-digital-usd",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\first-digital-usd.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "the-graph",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\the-graph.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "ousg",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\ousg.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "gnosis",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\gnosis.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "apxusd",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\apxusd.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "optimism",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\optimism.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "backpack",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\backpack.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "olympus",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\olympus.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "jito-governance-token",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\jito-governance-token.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "re-protocol-reusd",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\re-protocol-reusd.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "arweave",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\arweave.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "terra-luna",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\terra-luna.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "syrup",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\syrup.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "ethereum-name-service",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\ethereum-name-service.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "conflux-token",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\conflux-token.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "floki",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\floki.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "ape-and-pepe",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\ape-and-pepe.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "iota",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\iota.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "jasmycoin",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\jasmycoin.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "kaia",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\kaia.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "thorchain",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\thorchain.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "dogwifcoin",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\dogwifcoin.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "zebec-network",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\zebec-network.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "pons",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\pons.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "eigenlayer",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\eigenlayer.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "compound-governance-token",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\compound-governance-token.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "collector-crypt",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\collector-crypt.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "trust-wallet-token",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\trust-wallet-token.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "apenft",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\apenft.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "useless-3",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\useless-3.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "theta-token",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\theta-token.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "kamino",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\kamino.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "crvusd",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\crvusd.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "akash-network",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\akash-network.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "axie-infinity",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\axie-infinity.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "kinesis-silver",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\kinesis-silver.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "bnb48-club-token",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\bnb48-club-token.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "agora-dollar",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\agora-dollar.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "doublezero",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\doublezero.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "frax",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\frax.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "shuffle-2",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\shuffle-2.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "usx",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\usx.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "zama",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\zama.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "mina-protocol",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\mina-protocol.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "convex-finance",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\convex-finance.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "safo",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\safo.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "decentraland",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\decentraland.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "the-sandbox",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\the-sandbox.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "tradable-na-rent-financing-platform-sstn",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\tradable-na-rent-financing-platform-sstn.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "origintrail",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\origintrail.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "chain-2",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\chain-2.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "societe-generale-forge-eurcv",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\societe-generale-forge-eurcv.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "usa",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\usa.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "fartcoin",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\fartcoin.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "instadapp",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\instadapp.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "neo",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\neo.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "chiliz",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\chiliz.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "build-on",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\build-on.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "mx-token",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\mx-token.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "sentient",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\sentient.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "swissborg",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\swissborg.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "apyusd",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\apyusd.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "vaulta",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\vaulta.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "sonic-3",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\sonic-3.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "spiko-us-t-bills-money-market-fund",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\spiko-us-t-bills-money-market-fund.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "immutable-x",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\immutable-x.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "vision-3",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\vision-3.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "apecoin",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\apecoin.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "non-playable-coin",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\non-playable-coin.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "railgun",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\railgun.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "coco-2",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\coco-2.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "ecash",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\ecash.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "meteora",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\meteora.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "stronghold-token",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\stronghold-token.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "tradable-apac-diversified-finance-provider-sstn",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\tradable-apac-diversified-finance-provider-sstn.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "gmt-token",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\gmt-token.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "edgex",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\edgex.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "btse-token",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\btse-token.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "basic-attention-token",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\basic-attention-token.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "cash-cat",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\cash-cat.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "superfarm",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\superfarm.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "1inch",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\1inch.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "stonk-3",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\stonk-3.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "safepal",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\safepal.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "gusd",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\gusd.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "aethir",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\aethir.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "humanity",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\humanity.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "havven",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\havven.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "strategy-pp-variable-xstock",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\strategy-pp-variable-xstock.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "geodnet",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\geodnet.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "aioz-network",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\aioz-network.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "dgrid-ai",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\dgrid-ai.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "elrond-erd-2",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\elrond-erd-2.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "circle-internet-group-bstock",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\circle-internet-group-bstock.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "zksync",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\zksync.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "meta-2-2",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\meta-2-2.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "ultima",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\ultima.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "celium",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\celium.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "jpycoin",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\jpycoin.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "beam-2",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\beam-2.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "plume",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\plume.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "orca",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\orca.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "stp-network",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\stp-network.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "chutes",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\chutes.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    },
+    {
+      "coin_id": "golem",
+      "status": "success",
+      "file": "D:\\git\\crypto-market-analytics\\data\\samples\\incremental_load_250\\2026-10-08\\golem.json",
+      "start_date": "2026-10-07",
+      "end_date": "2026-10-09"
+    }
+  ]
+}
