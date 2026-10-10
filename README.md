@@ -127,9 +127,9 @@ The tested dataset produced:
 
 | Metric | Result |
 |---|---:|
-| Bronze observations | 551,996 |
-| Silver observations | 551,991 |
-| Quarantined Silver observations | 5 |
+| Bronze observations | 534509|
+| Silver observations | 5445885|
+| Quarantined Silver observations | 0 |
 | Unique cryptocurrencies | 250 |
 | Duplicate Silver business keys | 0 |
 
