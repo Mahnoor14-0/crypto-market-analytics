@@ -2,7 +2,7 @@
 Cryptocurrency Market Analytics Pipeline using Apache Spark, Databricks and Power BI
 
 
-## Bronze and Silver Data Pipeline
+## Bronze, Silver and Gold Data Pipeline
 
 ### Project Overview
 
@@ -144,7 +144,6 @@ Reprocessing the same Silver observations did not increase the Silver record cou
 - GitHub
 - Power BI (downstream analytics and visualization)
 
-# Phase 3 README sections (paste into README.md)
 
 ## Pipeline flow
 CoinGecko API -> scripts -> raw JSON -> **Bronze** (`bronze_coin_market_raw`) -> **Silver** (`silver_market_observation`) -> **Gold** (star schema) -> Power BI.
